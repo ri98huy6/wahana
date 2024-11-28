@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perbandingan Nilai</title>
+
+    <!-- Font Awesome CDN untuk ikon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        /* Reset dan Styling Umum */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #082f51; /* Biru gelap */
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin-right: 20px;
+        }
+
+        .nav-links li {
+            margin-left: 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: #5a6268; /* Abu-abu gelap */
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: disc;
+            color: #2f4f4f;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        iframe {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #6c757d; /* Abu-abu */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">Perbandingan Kelas 7</div>
+    <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+        <li><a href="materiweb.html"><i class="fas fa-book"></i> Materi</a></li>
+        <li><a href="contoh-soal.html"><i class="fas fa-edit"></i> Contoh Soal</a></li>
+        <li><a href="latihanweb.html"><i class="fas fa-pencil-alt"></i> Latihan</a></li>
+        <li><a href="kuisweb.html"><i class="fas fa-question-circle"></i> Kuis</a></li>
+        <li><a href="About-Me.html"><i class="fas fa-envelope"></i> About Me</a></li>
+    </ul>
+</nav>
+
+<!-- Main Content -->
+<main>
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kuis Perbandingan Berbalik Nilai</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                background-color: #f4f4f4;
+            }
+            .container {
+                background: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                max-width: 600px;
+                margin: auto;
+            }
+            h1 {
+                color: #333;
+                text-align: center;
+            }
+            .question {
+                margin-bottom: 20px;
+                padding: 10px;
+                background: #e7f3fe;
+                border-left: 5px solid #2196F3;
+                border-radius: 4px;
+            }
+            .question p {
+                margin: 0;
+                padding-bottom: 10px;
+            }
+            .question input[type="radio"] {
+                margin-right: 10px;
+            }
+            .submit-btn {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                background: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            .submit-btn:hover {
+                background: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Kuis Perbandingan Berbalik Nilai</h1>
+            <form action="process_quiz.php" method="post">
+                <div class="question">
+                    <p>1. Jika 4 pekerja dapat menyelesaikan pekerjaan dalam 10 hari, berapa hari yang dibutuhkan jika jumlah pekerja ditambah menjadi 8 orang?</p>
+                    <input type="radio" name="question1" value="5" required> 5 hari<br>
+                    <input type="radio" name="question1" value="8"> 8 hari<br>
+                    <input type="radio" name="question1" value="10"> 10 hari<br>
+                    <input type="radio" name="question1" value="20"> 20 hari<br>
+                </div>
+                <div class="question">
+                    <p>2. Sebuah mesin dapat memproduksi 100 unit barang dalam 4 jam. Berapa lama waktu yang dibutuhkan untuk memproduksi 200 unit barang jika mesin yang digunakan menjadi 2 kali lebih banyak?</p>
+                    <input type="radio" name="question2" value="2" required> 2 jam<br>
+                    <input type="radio" name="question2" value="4"> 4 jam<br>
+                    <input type="radio" name="question2" value="8"> 8 jam<br>
+                    <input type="radio" name="question2" value="10"> 10 jam<br>
+                </div>
+                <div class="question">
+                    <p>3. Jika 12 pekerja dapat menyelesaikan pekerjaan dalam 6 hari, berapa hari yang dibutuhkan jika hanya 6 pekerja yang bekerja?</p>
+                    <input type="radio" name="question3" value="3" required> 3 hari<br>
+                    <input type="radio" name="question3" value="6"> 6 hari<br>
+                    <input type="radio" name="question3" value="12"> 12 hari<br>
+                    <input type="radio" name="question3" value="18"> 18 hari<br>
+                </div>
+                <div class="question">
+                    <p>4. Sebuah tangki air dapat diisi penuh dalam 8 jam dengan 1 pompa. Berapa lama waktu yang dibutuhkan jika menggunakan 2 pompa?</p>
+                    <input type="radio" name="question4" value="2" required> 2 jam<br>
+                    <input type="radio" name="question4" value="4"> 4 jam<br>
+                    <input type="radio" name="question4" value="6"> 6 jam<br>
+                    <input type="radio" name="question4" value="8"> 8 jam<br>
+                </div>
+                <div class="question">
+                    <p>5. Jika 5 siswa dapat menyelesaikan 25 soal dalam 1 jam, berapa lama waktu yang dibutuhkan jika ada 10 siswa?</p>
+                    <input type="radio" name="question5" value="0.5" required> 0.5 jam<br>
+                    <input type="radio" name="question5" value="1"> 1 jam<br>
+                    <input type="radio" name="question5" value="2"> 2 jam<br>
+                    <input type="radio" name="question5" value="5"> 5 jam<br>
+                </div>
+                <div class="question">
+                    <p>6. Sebuah pekerjaan dapat diselesaikan oleh 3 orang dalam 15 hari. Berapa hari yang dibutuhkan jika pekerja ditambah menjadi 5 orang?</p>
+                    <input type="radio" name="question6" value="9" required> 9 hari<br>
+                    <input type="radio" name="question6" value="10"> 10 hari<br>
+                    <input type="radio" name="question6" value="12"> 12 hari<br>
+                    <input type="radio" name="question6" value="15"> 15 hari<br>
+                </div>
+                <div class="question">
+                    <p>7. Sebuah pompa air dapat mengisi kolam dalam 6 jam. Berapa lama waktu yang dibutuhkan jika menggunakan 3 pompa air yang sama?</p>
+                    <input type="radio" name="question7" value="2" required> 2 jam<br>
+                    <input type="radio" name="question7" value="3"> 3 jam<br>
+                    <input type="radio" name="question7" value="4"> 4 jam<br>
+                    <input type="radio" name="question7" value="6"> 6 jam<br>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </body>
+    </html>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Perbandingan Berbalik Nilai. Riska Wahana.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

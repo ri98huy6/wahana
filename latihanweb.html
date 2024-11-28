@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perbandingan Nilai</title>
+
+    <!-- Font Awesome CDN untuk ikon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        /* Reset dan Styling Umum */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #082f51; /* Biru gelap */
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin-right: 20px;
+        }
+
+        .nav-links li {
+            margin-left: 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: #5a6268; /* Abu-abu gelap */
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: disc;
+            color: #2f4f4f;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        iframe {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #6c757d; /* Abu-abu */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">Perbandingan Kelas 7</div>
+    <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+        <li><a href="materiweb.html"><i class="fas fa-book"></i> Materi</a></li>
+        <li><a href="contoh-soal.html"><i class="fas fa-edit"></i> Contoh Soal</a></li>
+        <li><a href="latihanweb.html"><i class="fas fa-pencil-alt"></i> Latihan</a></li>
+        <li><a href="kuisweb.html"><i class="fas fa-question-circle"></i> Kuis</a></li>
+        <li><a href="About-Me.html"><i class="fas fa-envelope"></i> About Me</a></li>
+    </ul>
+</nav>
+
+<!-- Main Content -->
+<main>
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perbandingan Berbalik Nilai</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+            .container {
+                width: 80%;
+                margin: auto;
+                overflow: hidden;
+                padding: 20px;
+                background: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                margin-top: 20px;
+            }
+            h1, h2, h3 {
+                color: #333;
+            }
+            p {
+                line-height: 1.6;
+            }
+            .example, .exercise {
+                background: #e7f3fe;
+                border-left: 5px solid #2196F3;
+                padding: 10px 20px;
+                margin: 20px 0;
+            }
+            .answer {
+                background: #e0ffe0;
+                border-left: 5px solid #4CAF50;
+                padding: 10px 20px;
+                margin: 20px 0;
+                display: none;
+            }
+            .show-answer {
+                cursor: pointer;
+                color: #007bff;
+                text-decoration: underline;
+            }
+        </style>
+        <script>
+            function toggleAnswer(id) {
+                var answer = document.getElementById(id);
+                if (answer.style.display === "none") {
+                    answer.style.display = "block";
+                } else {
+                    answer.style.display = "none";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Latihan Soal</h2>
+            <div class="exercise">
+                <h3>Latihan 1:</h3>
+                <p>Jika 6 pekerja dapat menyelesaikan sebuah pekerjaan dalam waktu 12 hari, berapa waktu yang dibutuhkan jika jumlah pekerja ditambah menjadi 8 orang?</p>
+                <p class="show-answer" onclick="toggleAnswer('answer1')">Lihat Jawaban</p>
+                <div class="answer" id="answer1">
+                    <p>Jawaban: 9 hari</p>
+                    <p>Penjelasan: 6 pekerja * 12 hari = 72 pekerja-hari. Jadi, 72 pekerja-hari / 8 pekerja = 9 hari.</p>
+                </div>
+            </div>
+    
+            <div class="exercise">
+                <h3>Latihan 2:</h3>
+                <p>Sebuah pompa air dapat mengisi sebuah tangki dalam waktu 5 jam dengan laju aliran 20 liter/menit. Berapa waktu yang dibutuhkan jika laju aliran ditingkatkan menjadi 25 liter/menit?</p>
+                <p class="show-answer" onclick="toggleAnswer('answer2')">Lihat Jawaban</p>
+                <div class="answer" id="answer2">
+                    <p>Jawaban: 4 jam</p>
+                    <p>Penjelasan: 20 liter/menit * 5 jam * 60 menit/jam = 6000 liter. Jadi, 6000 liter / 25 liter/menit = 240 menit = 4 jam.</p>
+                </div>
+            </div>
+    
+            <div class="exercise">
+                <h3>Latihan 3:</h3>
+                <p>Sebuah mesin dapat memproduksi 500 unit barang dalam waktu 10 jam. Berapa waktu yang dibutuhkan jika mesin tersebut ditingkatkan kapasitasnya sehingga dapat memproduksi 600 unit barang dalam waktu yang sama?</p>
+                <p class="show-answer" onclick="toggleAnswer('answer3')">Lihat Jawaban</p>
+                <div class="answer" id="answer3">
+                    <p>Jawaban: 12 jam</p>
+                    <p>Penjelasan: 500 unit / 10 jam = 50 unit/jam. Jadi, 600 unit / 50 unit/jam = 12 jam.</p>
+                </div>
+            </div>
+    
+            <div class="exercise">
+                <h3>Latihan 4:</h3>
+                <p>Jika 3 orang dapat menyelesaikan sebuah proyek dalam waktu 15 hari, berapa waktu yang dibutuhkan jika jumlah orang yang bekerja ditambah menjadi 5 orang?</p>
+                <p class="show-answer" onclick="toggleAnswer('answer4')">Lihat Jawaban</p>
+                <div class="answer" id="answer4">
+                    <p>Jawaban: 9 hari</p>
+                    <p>Penjelasan: 3 orang * 15 hari = 45 orang-hari. Jadi, 45 orang-hari / 5 orang = 9 hari.</p>
+                </div>
+            </div>
+    
+            <div class="exercise">
+                <h3>Latihan 5:</h3>
+                <p>Sebuah mobil dapat menempuh jarak tertentu dalam waktu 6 jam dengan kecepatan 50 km/jam. Berapa waktu yang dibutuhkan jika mobil tersebut menempuh jarak yang sama dengan kecepatan 75 km/jam?</p>
+                <p class="show-answer" onclick="toggleAnswer('answer5')">Lihat Jawaban</p>
+                <div class="answer" id="answer5">
+                    <p>Jawaban: 4 jam</p>
+                    <p>Penjelasan: 50 km/jam * 6 jam = 300 km. Jadi, 300 km / 75 km/jam = 4 jam.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Perbandingan Berbalik Nilai. Riska Wahana.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
